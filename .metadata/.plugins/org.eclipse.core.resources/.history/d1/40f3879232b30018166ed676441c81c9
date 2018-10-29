@@ -1,0 +1,10 @@
+
+public class Fraction {
+	public Integer numerator;
+	public Integer denominator;
+	
+	public String describe () {
+		String result = numerator + "/" + denominato;
+		return result;
+	}
+}

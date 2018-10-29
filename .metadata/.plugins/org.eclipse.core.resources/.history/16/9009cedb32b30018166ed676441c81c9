@@ -1,0 +1,47 @@
+
+public class FractionRunner {
+
+	public static void main(String[] args) {
+		if (args.length == 5) {
+			Integer numenator1 = Integer.parseInt(args[0]);
+			Integer denominator1 = Integer.parseInt(args[1]);
+			Integer numenator2 = Integer.parseInt(args[2]);
+			Integer denominator2 = Integer.parseInt(args[3]);
+			
+			
+			Fraction fractionOne = new Fraction();
+			fractionOne.numerator = numenator1;
+			fractionOne.denominator = denominator1;
+			
+			Fraction fractionTwo = new Fraction();
+			fractionTwo.numerator = numenator2;
+			fractionTwo.denominator = denominator2;
+			
+			
+			FractionEngine fEngine = new FractionEngine();
+			fEngine.firsFraction = fractionOne;
+			fEngine.secondFraction = fractionTwo;
+			
+			Fraction result;
+			String operator = args[4];
+			if (operator.length()==1) {
+				switch(operator) {
+					case "+":
+						result = fEngine.add();
+					case "-":
+						result = fEngine.subtract();
+					case "/":
+						result = fEngine.divide();
+					case "*" :
+						result = fEngine.multiply();
+
+				}
+			}
+			
+		} else {
+			System.out.println("You must enter 5 arguments");
+		}
+
+	}
+
+}

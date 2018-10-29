@@ -1,0 +1,65 @@
+
+public class Fraction {
+	public Integer numerator;
+	
+	
+	private Integer denominator;
+	private Integer whole;
+	
+	public Integer getDenominator () {
+		return denominator;
+	}
+	
+	public void setDenominator (Integer newValue) {
+		if (newValue.equals(0)) {
+			denominator = 1;
+			System.out.println("wrong input");
+		} else {
+			denominator = newValue;
+		}
+	}
+	
+	public void setDenominator (String newValue) {
+		try {
+			Integer intValue = Integer.parseInt(newValue);
+			if (intValue.equals(0)) {
+				denominator = 1;
+				System.out.println("wrong input");
+			} else {
+				denominator = intValue;
+			}
+		} catch (Exception e) {
+			System.out.println("wrong input");
+		}
+	}
+	
+	public void setNumerator(Integer value) {
+		numerator = value;
+	}
+	public void setNumerator(String value) {
+		try {
+			Integer intValue = Integer.parseInt(value);
+			numerator = intValue;
+		}
+		catch (Exception e) {
+			System.out.println("wrong input");
+		}
+	}
+	
+	public String describe () {
+		processResult();
+		String result = numerator + "/" + denominator;
+		return result;
+	}
+	
+	public double decimalValue () {
+		double result = (double) numerator/denominator;
+		return result;
+	}
+	
+	private void processResult() {
+		
+		
+	}
+	
+}

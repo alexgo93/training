@@ -1,0 +1,4 @@
+final int MYSCORE=10;
+MYSCORE--;
+MYSCORE=myScore*2;
+System.out.println("My score is " + MYSCORE);

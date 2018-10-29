@@ -1,0 +1,7 @@
+
+public class FractionEngine {
+	public Fraction add (Fraction fractionFirst, Fraction fractionSecond) {
+		return null;
+	}
+	
+}

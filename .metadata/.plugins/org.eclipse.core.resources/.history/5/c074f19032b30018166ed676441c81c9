@@ -1,0 +1,5 @@
+
+public class Fraction {
+	public Integer numerator;
+	public Integer denominator;
+}

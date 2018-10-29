@@ -1,0 +1,13 @@
+package year_calc;
+
+public class year_calculate {
+	public static String leap(int y) {
+		String year_result;
+		if(y%4==0) {
+			year_result = y + "year is leap";
+		}else {
+			year_result = y + "year is't leap";
+		}
+		return year_result;
+	}
+}

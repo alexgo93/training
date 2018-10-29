@@ -1,0 +1,40 @@
+
+public class FractionEngine {
+	Fraction firstFraction;
+	Fraction secondFraction;
+	
+	
+	public Fraction add () {
+		Fraction result = new Fraction();
+		//result.denominator = first
+		
+		return null;
+	}
+	
+	public Fraction multiply () {
+		return null;
+	}
+	
+	public Fraction divide () {
+		return null;
+	}
+	
+	public Fraction subtract () {
+		return null;
+	}
+	
+	
+	public String FractionAdd(int nom1,int denom1,int nom2,int denom2) {
+		int AddCommonDenom = denom1 * denom2;
+		int AddCommonNom = (AddCommonDenom * nom1) + (AddCommonDenom * nom2);
+		if(AddCommonNom>AddCommonDenom) {
+			int i = Math.floorDiv(AddCommonNom, AddCommonDenom);
+			int newNom = AddCommonNom % AddCommonDenom;
+			return "i " + "newNom" + "/" + "AddCommonDenom";
+		} else {
+			return "AddCommonNom" + "/" + "AddCommonDenom";
+		}
+	}
+	
+	
+}

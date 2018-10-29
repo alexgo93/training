@@ -1,0 +1,11 @@
+package year_calc;
+
+public class year_calc_call {
+
+	public static void main(String[] args) {
+		year_calculate myYear = new year_calculate();
+		System.out.println(myYear.leap(1992));
+
+	}
+
+}

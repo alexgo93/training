@@ -1,0 +1,10 @@
+package year_calc;
+
+public class year_calc_call {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,18 @@
+
+public class FractionEngine {
+	public Fraction add (Fraction fractionFirst, Fraction fractionSecond) {
+		return null;
+	}
+	
+	public Fraction multiply (Fraction fractionFirst, Fraction fractionSecond) {
+		return null;
+	}
+	
+	public Fraction divide (Fraction fractionFirst, Fraction fractionSecond) {
+		return null;
+	}
+	
+	public Fraction subtract (Fraction fractionFirst, Fraction fractionSecond) {
+		return null;
+	}
+}

@@ -1,0 +1,15 @@
+
+public class Fraction {
+	public Integer numerator;
+	public Integer denominator;
+	
+	public String describe () {
+		String result = numerator + "/" + denominator;
+		return result;
+	}
+	
+	public double decimalValue () {
+		double result = numerator/denominator;
+		return result;
+	}
+}

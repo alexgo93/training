@@ -1,0 +1,13 @@
+
+public class FractionRunner {
+
+	public static void main(String[] args) {
+		if (args.length == 5) {
+			
+		} else {
+			System.out.println("You must enter 5 arguments")
+		}
+
+	}
+
+}

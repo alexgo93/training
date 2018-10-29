@@ -1,0 +1,22 @@
+
+public class FractionEngine {
+	Fraction firsFraction;
+	Fraction secondFraction;
+	
+	
+	public Fraction add () {
+		return null;
+	}
+	
+	public Fraction multiply () {
+		return null;
+	}
+	
+	public Fraction divide () {
+		return null;
+	}
+	
+	public Fraction subtract () {
+		return null;
+	}
+}

@@ -1,0 +1,12 @@
+
+public class TemperatureConverter {
+	public String convertTemp (int temperature, char convertTo) {
+		String tempResult;
+		if(convertTo=='F') {
+			tempResult = "температура = " + temperature;
+		}else {
+			tempResult="температура = " + (temperature+70);
+		}
+		return tempResult;
+	}
+}

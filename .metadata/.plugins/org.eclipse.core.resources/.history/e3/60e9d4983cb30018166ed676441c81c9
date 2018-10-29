@@ -1,0 +1,71 @@
+
+public class FractionRunner {
+
+	public static void main(String[] args) {
+		if (args.length == 5) {
+			try {
+				Integer numenator1 = Integer.parseInt(args[0]);
+				Integer denominator1 = Integer.parseInt(args[1]);
+				Integer numenator2 = Integer.parseInt(args[2]);
+				Integer denominator2 = Integer.parseInt(args[3]);
+			
+				Fraction fractionOne = new Fraction();
+				fractionOne.numerator = numenator1;
+				fractionOne.setDenominator(denominator1);
+				
+				System.out.println(fractionOne.describe());
+				System.out.println(fractionOne.decimalValue());
+				
+				
+				
+				Fraction fractionTwo = new Fraction();
+				fractionTwo.numerator = numenator2;
+				fractionTwo.setDenominator(denominator2);
+				
+				
+				FractionEngine fEngine = new FractionEngine();
+				fEngine.firstFraction = fractionOne;
+				fEngine.secondFraction = fractionTwo;
+				
+				Fraction result = null;
+				String operator = args[4];
+				if (operator.length()==1) {
+					switch(operator) {
+						case "+":
+							result = fEngine.add();
+							break;
+						case "-":
+							result = fEngine.subtract();
+							break;
+						case "/":
+							result = fEngine.divide();
+							break;
+						case "*" :
+							result = fEngine.multiply();
+							break;
+						default:
+							System.out.println("You must enter right opearton");
+					}
+				}
+				
+				if (result != null) {
+					System.out.println(result.describe());
+					System.out.println(result.decimalValue());
+					
+				}
+					
+				
+			} catch (NumberFormatException e) {
+				System.out.println("You've entered wrong argument: " + e.getMessage());
+			}
+				
+
+			
+			
+		} else {
+			System.out.println("You must enter 5 arguments");
+		}
+
+	}
+
+}

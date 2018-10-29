@@ -1,0 +1,15 @@
+
+public class FractionRunner {
+
+	public static void main(String[] args) {
+		if (args.length == 5) {
+			Integer numenator1 = Integer.parseInt(args[0]);
+			
+			
+		} else {
+			System.out.println("You must enter 5 arguments");
+		}
+
+	}
+
+}

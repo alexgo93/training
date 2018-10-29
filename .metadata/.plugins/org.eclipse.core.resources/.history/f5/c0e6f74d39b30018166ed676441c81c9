@@ -1,0 +1,22 @@
+
+public class Fraction {
+	public Integer numerator;
+	public Integer denominator;
+	
+	public String describe () {
+		processResult();
+		String result = numerator + "/" + denominator;
+		return result;
+	}
+	
+	public double decimalValue () {
+		double result = (double) numerator/denominator;
+		return result;
+	}
+	
+	private void processResult() {
+		
+		
+	}
+	
+}
